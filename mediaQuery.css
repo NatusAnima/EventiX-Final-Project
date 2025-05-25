@@ -1,0 +1,17 @@
+/* Media queries for responsive design (tablet, phones, and PCs) */
+@media (max-width: 768px) {
+    .creator-container { flex-direction: column; }
+    .creator-info, .contact-info { width: 100%; }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .creator-container { flex-direction: row; flex-wrap: wrap; }
+    .creator-info, .contact-info { width: 50%; }
+    header nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+@media (min-width: 1025px) {
+    .creator-container { flex-direction: row; }
+    .creator-info, .contact-info { width: 50%; }
+}

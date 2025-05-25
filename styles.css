@@ -15,3 +15,18 @@ body {
     border-color: #6366f1; /* Purple border on focus */
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3); /* Purple glow on focus */
 }
+
+/* Make the interactive element's button (and its container) adaptive so that on small screens the button does not slip out of bounds. */
+.interactive-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.interactive-container button {
+    min-width: 100px; /* (or adjust as needed) */
+}
+
+/* (New rule) so that when "About Us" (or any header link) is clicked, only the clicked link lights up (i.e. only the active link gets the hover color). (This change is applied globally so that every header link (except the active one) does not light up on click.) */
+header nav a:not(:hover) {
+    color: #4b5563; /* (or your default text color) */
+}

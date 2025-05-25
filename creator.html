@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventiX – Meet the Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="mediaQuery.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 flex flex-col md:flex-row justify-between items-center rounded-b-lg">
+        <div class="flex items-center mb-4 md:mb-0">
+            <div class="mr-3 bg-white rounded-full flex items-center justify-center" style="width:52px; height:52px; padding:6px;">
+                <img src="assets/logo.png" alt="EventiX Logo" class="h-10 w-10 object-contain">
+            </div>
+            <h1 class="text-3xl font-bold text-gray-800">EventiX</h1>
+        </div>
+        <nav class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-lg font-medium">
+            <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Home</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Events</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Event Details</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Buy Tickets</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Organizer Dashboard</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">My Profile</a>
+            <a href="team.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">About Us</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8 md:py-12">
+
+        <section class="mb-12 bg-white p-8 rounded-xl shadow-custom">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">Meet the Creator</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Meet the single maker behind EventiX – a passionate developer and event enthusiast.</p>
+        </section>
+
+        <section class="mb-12 bg-white p-6 rounded-xl shadow-custom creator-container">
+            <div class="creator-info p-4">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">About the Creator</h3>
+                <p class="text-gray-700 mb-4">This is the single maker who envisioned and built EventiX. With a passion for seamless event management and a keen eye for design, they've created a platform that connects event organizers and attendees alike.</p>
+                <p class="text-gray-700 mb-4">You can visit their personal page at <a href="https://example.com/creator" class="text-indigo-600 hover:underline" target="_blank">https://example.com/creator</a>.</p>
+            </div>
+            <div class="contact-info p-4">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Contact the Group Leader - Igor Yavets</h3>
+                <p class="text-gray-700 mb-4">Feel free to reach out to the group leader for any inquiries or collaboration ideas.</p>
+                <p class="text-gray-700 mb-4">Email: <a href="mailto:group.leader@eventix.com" class="text-indigo-400 hover:text-indigo-300">group.leader@eventix.com</a></p>
+                <p class="text-gray-700 mb-4">Phone: <a href="tel:+1987654321" class="text-indigo-400 hover:text-indigo-300">+1 (987) 654-321</a></p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-white p-6 rounded-xl shadow-custom">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Interactive Element</h3>
+            <p class="text-gray-700 mb-4" id="js-output-creator">Loading current date and time...</p>
+            <div class="flex items-center gap-4">
+                <input type="text" id="nameInputCreator" placeholder="Enter your name" class="p-3 border border-gray-300 rounded-lg input-focus focus:ring-2 focus:ring-indigo-200 transition duration-200">
+                <button id="greetButtonCreator" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out shadow-md">Say Hello</button>
+            </div>
+            <p class="text-gray-700 mt-4" id="greetingMessageCreator"></p>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 px-6 md:px-10 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <p class="mb-4">&copy; 2025 EventiX. All rights reserved.</p>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-white transition duration-300">FAQ</a>
+            </div>
+            <div class="mt-6 text-base">
+                <p>Contact Us:</p>
+                <p>Email: <a href="mailto:info@eventix.com" class="text-indigo-400 hover:text-indigo-300">info@eventix.com</a></p>
+                <p>Phone: <a href="tel:+1234567890" class="text-indigo-400 hover:text-indigo-300">+1 (234) 567-890</a></p>
+                <p>Address: 123 Event Street, Cityville, Country</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
