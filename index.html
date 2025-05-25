@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventiX - Discover & Manage Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 flex flex-col md:flex-row justify-between items-center rounded-b-lg">
+        <div class="flex items-center mb-4 md:mb-0">
+            <img src="https://placehold.co/40x40/6366f1/ffffff?text=E" alt="EventiX Logo" class="h-10 w-10 mr-3 rounded-full gradient-bg">
+            <h1 class="text-3xl font-bold text-gray-800">EventiX</h1>
+        </div>
+
+        <nav class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-lg font-medium">
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Home</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Events</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Event Details</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Buy Tickets</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Organizer Dashboard</a>
+            <a href="#" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">My Profile</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8 md:py-12">
+
+        <section class="text-center mb-12 bg-white p-8 rounded-xl shadow-custom">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+                Discover Amazing Events, <span class="gradient-bg text-transparent bg-clip-text">Seamlessly.</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                Your one-stop platform for finding, organizing, and attending the best events around you.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+                    Explore Events
+                </button>
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+                    Become an Organizer
+                </button>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-white p-6 rounded-xl shadow-custom">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Find Your Next Experience</h3>
+            <div class="flex flex-col md:flex-row gap-4">
+                <input type="text" placeholder="Search by event name, city, or category..."
+                       class="flex-grow p-3 border border-gray-300 rounded-lg input-focus focus:ring-2 focus:ring-indigo-200 transition duration-200">
+                <button class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out shadow-md">
+                    Search
+                </button>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-white p-6 rounded-xl shadow-custom">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-6">Featured Events</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+                    <img src="https://placehold.co/300x180/e0e7ff/4f46e5?text=Concert" alt="Featured Event 1" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Summer Music Fest</h4>
+                    <p class="text-gray-600 text-sm mb-2">📍 Central Park, NYC</p>
+                    <p class="text-gray-600 text-sm mb-4">🗓️ July 15, 2025</p>
+                    <button class="w-full bg-indigo-400 hover:bg-indigo-500 text-white font-medium py-2 rounded-md transition duration-200">View Details</button>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+                    <img src="https://placehold.co/300x180/e0e7ff/4f46e5?text=Tech+Conf" alt="Featured Event 2" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Global Tech Summit</h4>
+                    <p class="text-gray-600 text-sm mb-2">📍 Convention Center, London</p>
+                    <p class="text-gray-600 text-sm mb-4">🗓️ August 22-23, 2025</p>
+                    <button class="w-full bg-indigo-400 hover:bg-indigo-500 text-white font-medium py-2 rounded-md transition duration-200">View Details</button>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+                    <img src="https://placehold.co/300x180/e0e7ff/4f46e5?text=Workshop" alt="Featured Event 3" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Creative Writing Workshop</h4>
+                    <p class="text-gray-600 text-sm mb-2">📍 Community Hall, Berlin</p>
+                    <p class="text-gray-600 text-sm mb-4">🗓️ September 10, 2025</p>
+                    <button class="w-full bg-indigo-400 hover:bg-indigo-500 text-white font-medium py-2 rounded-md transition duration-200">View Details</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-white p-6 rounded-xl shadow-custom">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Interactive Element</h3>
+            <p class="text-gray-700 mb-4" id="js-output">Loading current date and time...</p>
+            <div class="flex items-center gap-4">
+                <input type="text" id="nameInput" placeholder="Enter your name"
+                       class="p-3 border border-gray-300 rounded-lg input-focus focus:ring-2 focus:ring-indigo-200 transition duration-200">
+                <button id="greetButton" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out shadow-md">
+                    Say Hello
+                </button>
+            </div>
+            <p class="text-gray-700 mt-4" id="greetingMessage"></p>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 px-6 md:px-10 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <p class="mb-4">&copy; 2025 EventiX. All rights reserved.</p>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-white transition duration-300">FAQ</a>
+            </div>
+            <div class="mt-6 text-base">
+                <p>Contact Us:</p>
+                <p>Email: <a href="mailto:info@eventix.com" class="text-indigo-400 hover:text-indigo-300">info@eventix.com</a></p>
+                <p>Phone: <a href="tel:+1234567890" class="text-indigo-400 hover:text-indigo-300">+1 (234) 567-890</a></p>
+                <p>Address: 123 Event Street, Cityville, Country</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
